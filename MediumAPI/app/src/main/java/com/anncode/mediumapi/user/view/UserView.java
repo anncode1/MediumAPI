@@ -1,5 +1,7 @@
 package com.anncode.mediumapi.user.view;
 
+import com.anncode.mediumapi.user.model.User;
+
 /**
  * Created by anahisalgado on 20/06/17.
  */
@@ -7,6 +9,6 @@ package com.anncode.mediumapi.user.view;
 public interface UserView {
 
         void getDataUser();
-        void showDataUser();
+        void showDataUser(User user);
         void goPostList();
 }

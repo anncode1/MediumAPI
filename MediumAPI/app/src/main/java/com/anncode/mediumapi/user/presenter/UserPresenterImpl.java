@@ -2,6 +2,7 @@ package com.anncode.mediumapi.user.presenter;
 
 import com.anncode.mediumapi.user.interactor.UserInteractor;
 import com.anncode.mediumapi.user.interactor.UserInteractorImpl;
+import com.anncode.mediumapi.user.model.User;
 import com.anncode.mediumapi.user.view.UserView;
 
 /**
@@ -19,11 +20,11 @@ public class UserPresenterImpl implements UserPresenter {
 
     @Override
     public void getDataUser() {
-
+        userInteractor.getDataUser();
     }
 
     @Override
-    public void showDataUser() {
-
+    public void showDataUser(User user) {
+        userView.showDataUser(user);
     }
 }
